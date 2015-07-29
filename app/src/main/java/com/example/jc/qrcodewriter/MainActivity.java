@@ -1,10 +1,9 @@
 package com.example.jc.qrcodewriter;
 
+import android.app.Activity;
 import android.graphics.Bitmap;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,7 +13,7 @@ import android.widget.ImageView;
 ;import net.glxn.qrgen.android.QRCode;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +45,6 @@ public class MainActivity extends ActionBarActivity {
 
         ImageView myImage = (ImageView) findViewById(R.id.myImageView);
         myImage.setImageBitmap(myBitmap);
-
-
 
     }
 
